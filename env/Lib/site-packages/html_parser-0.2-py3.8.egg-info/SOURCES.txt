@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+bin/parser
+html_parser.egg-info/PKG-INFO
+html_parser.egg-info/SOURCES.txt
+html_parser.egg-info/dependency_links.txt
+html_parser.egg-info/requires.txt
+html_parser.egg-info/top_level.txt
