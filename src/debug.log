@@ -1,3 +1,71 @@
 [0116/165932.006:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [0116/192924.995:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0116/192924.999:ERROR:exception_snapshot_win.cc(99)] thread ID 4852 not found in process
+[0122/152949.922:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/152949.925:ERROR:exception_snapshot_win.cc(99)] thread ID 25308 not found in process
+[0122/152949.938:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/152949.940:ERROR:exception_snapshot_win.cc(99)] thread ID 17032 not found in process
+[0122/152949.992:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/152949.992:ERROR:exception_snapshot_win.cc(99)] thread ID 7844 not found in process
+[0122/153536.075:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/153536.079:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/153536.079:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/153536.084:ERROR:exception_snapshot_win.cc(99)] thread ID 25932 not found in process
+[0122/153536.099:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/153536.099:ERROR:exception_snapshot_win.cc(99)] thread ID 23016 not found in process
+[0122/154558.730:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/161759.893:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/163325.401:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/163325.428:ERROR:exception_snapshot_win.cc(99)] thread ID 3856 not found in process
+[0122/163325.482:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/163325.482:ERROR:exception_snapshot_win.cc(99)] thread ID 7696 not found in process
+[0122/164423.778:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/165019.400:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/165019.414:ERROR:exception_snapshot_win.cc(99)] thread ID 14708 not found in process
+[0122/165019.481:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/165019.481:ERROR:exception_snapshot_win.cc(99)] thread ID 23380 not found in process
+[0122/165019.666:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/165019.666:ERROR:exception_snapshot_win.cc(99)] thread ID 17172 not found in process
+[0122/170256.282:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/170706.880:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/170706.896:ERROR:exception_snapshot_win.cc(99)] thread ID 23584 not found in process
+[0122/170706.974:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/170706.976:ERROR:exception_snapshot_win.cc(99)] thread ID 13988 not found in process
+[0122/171753.932:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/171858.988:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/171858.993:ERROR:exception_snapshot_win.cc(99)] thread ID 19312 not found in process
+[0122/171859.087:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/171859.087:ERROR:exception_snapshot_win.cc(99)] thread ID 19876 not found in process
+[0122/172824.946:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/172824.963:ERROR:exception_snapshot_win.cc(99)] thread ID 17340 not found in process
+[0122/172825.060:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/172825.060:ERROR:exception_snapshot_win.cc(99)] thread ID 3580 not found in process
+[0122/173840.279:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/180039.401:ERROR:process_info.cc(359)] UncheckedAllocate
+[0122/180039.480:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\akhan\AppData\Local\Temp\scoped_dir10512_784666535\Crashpad\attachments\f913d532-eee8-4541-93bf-8058aee5b5de: The system cannot find the path specified. (0x3)
+[0122/180043.646:ERROR:process_info.cc(359)] UncheckedAllocate
+[0122/180044.066:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.075:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.076:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.076:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.076:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.076:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.080:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.080:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.081:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.081:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.090:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.090:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.090:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.090:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.091:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.091:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.091:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.091:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.091:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.091:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.099:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.099:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/180044.099:ERROR:file_io.cc(135)] WriteFile: There is not enough space on the disk. (0x70)
+[0122/183438.832:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0122/184301.914:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
