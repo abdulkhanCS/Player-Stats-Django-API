@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.http import HttpResponse
 
-# Third party imports
+#Third party imports
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -10,82 +10,52 @@ from rest_framework.response import Response
 import requests
 from bs4 import BeautifulSoup
 
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select
-
-# from selenium.webdriver.chrome.options import Options
-import time
-
+#Holds request data
 data = None
 
+#API endpoint function
 @api_view(['GET'])
 def get(request):
     global data 
     data = request.data
     return Response(statscraper())
 
+#Searches requested player's id from playerIDs.txt
 def get_id():
     file = open("playerIDs.txt", "r", encoding='utf-8')
     for line in file:
         if data['player'] in line:
             return line.split(", ")[1]
     return str(-1)
-def get_name():
-    return data['player']
 
+#Returns requested date
 def get_date():
     return data['date']
 
+#Returns requested season
 def get_season():
     return data['season']
 
+#Scrapes data
 def statscraper():
-
     #Get requested player's ID
     target_id = get_id()
 
     #Read request data
-    target_playername = get_name()
     target_date = get_date()
     target_season = get_season()
     size = len(target_season)
     target_season = target_season[size-4] + target_season[size-3] + target_season[size-2] + target_season[size-1] 
-    print(target_playername)
-    print(target_date)
-    print(target_season)
-    print(target_id)
-
-    #Configure chrome driver
-    # chromedriver_PATH = "../chromedriver.exe"
-    # chrome_options = Options()
-    # chrome_options.add_argument("--headless")
-    # chrome_options.add_argument('--no-sandbox')
-    # chrome_options.add_argument("--disable-extensions")
-    # driver = webdriver.Chrome(executable_path=chromedriver_PATH)
-    # driver.get("http://google.com")
-
-    #Navigate to target player url
-    # searchbar = driver.find_element_by_name('q')
-    # searchbar.send_keys(str(target_playername) + " Game by Game Stats and Performance nba")
-    # searchbar.send_keys(Keys.RETURN)
-    # driver.find_element(By.XPATH, '(//h3)[1]/../../a').click()
     
     #Get url of target player
     target_url = "https://www.espn.com/nba/player/gamelog/_/id/" + str(target_id)
+    target_url = target_url.strip('\n')
     if(target_season != '2021'):
         target_url = target_url + "/type/nba/year/" + target_season
-    print(target_url)
-    #Quit driver
-    # driver.quit()
 
     #Start scraping stats
     response = requests.get(str(target_url))
     soup = BeautifulSoup(response.text, 'html.parser')
-    print(soup)
     season = soup.find_all(class_='filled Table__TR Table__TR--sm Table__even') + soup.find_all(class_="Table__TR Table__TR--sm Table__even")
     target_statline = None
     for game in season:
@@ -103,6 +73,7 @@ def statscraper():
             "errorCode" : "01",
         }
         return error
+        
     #If stats found with no error return statline
     else: 
         player_statline = {
