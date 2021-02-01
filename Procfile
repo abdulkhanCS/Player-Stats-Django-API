@@ -1,1 +1,1 @@
-web: gunicorn src.core.views
+web: gunicorn src.api.wsgi
