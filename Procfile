@@ -1,2 +1,2 @@
-web: gunicorn src.api.wsgi
+web: gunicorn wsgi
 web: python manage.py runserver
