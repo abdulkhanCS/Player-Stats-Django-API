@@ -1,1 +1,1 @@
-web: gunicorn api.wsgi
+web: waitress-serve
