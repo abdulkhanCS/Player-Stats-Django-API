@@ -25,7 +25,7 @@ SECRET_KEY = 'ce-ntr^1vf3b85@xt4n01m)!*j6nd0pa@o#z*zbo)8=(kwn2@4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["fastbreak-api.herokuapp.com"]
 
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
