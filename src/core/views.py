@@ -5,6 +5,7 @@ from django.http import HttpResponse
 #Third party imports
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
+from django.views import View
 from rest_framework.response import Response
 
 import requests
@@ -15,7 +16,7 @@ data = None
 
 #API endpoint function
 @api_view(['GET'])
-def get(request):
+def get_data(request):
     global data 
     data = request.data
     return Response(statscraper())
@@ -30,6 +31,10 @@ def get_id():
 
 #Returns requested date
 def get_date():
+    if (data['date'])[0] == '0':
+        data['date'] = (data['date'])[1 : len(data['date'])]
+    if (data['date'])[len(data['date']) - 2] == '0':
+        data['date'] = (data['date'])[0 : len(data['date']) - 3] + data['date'][0]
     return data['date']
 
 #Returns requested season
@@ -86,6 +91,7 @@ def statscraper():
     #If stats found with no error return statline
     else: 
         player_statline = {
+            "status" : 200,
             "statline" : {
                 "points": target_statline[16].text,
                 "rebounds": target_statline[10].text,
@@ -107,3 +113,6 @@ def statscraper():
             "score": target_statline[2].text, 
         }
         return player_statline
+
+
+    
