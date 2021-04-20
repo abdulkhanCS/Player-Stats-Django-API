@@ -25,7 +25,7 @@ SECRET_KEY = 'ce-ntr^1vf3b85@xt4n01m)!*j6nd0pa@o#z*zbo)8=(kwn2@4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["fastbreak-api.herokuapp.com"]
+ALLOWED_HOSTS = ["fastbreak-api.herokuapp.com", '127.0.0.1']
 
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
@@ -126,7 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-#STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
 #django_heroku.settings(locals())
 #serve(WSGI_APPLICATION)
