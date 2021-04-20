@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'src/playerIDs.txt')
 
 # Application definition
 
