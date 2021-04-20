@@ -22,7 +22,7 @@ def get(request):
 
 #Searches requested player's id from playerIDs.txt
 def get_id():
-    file = open("../src/playerIDs.txt", "r", encoding='utf-8')
+    file = open("src/playerIDs.txt", "r", encoding='utf-8')
     for line in file:
         if data['player'] in line:
             return line.split(", ")[1]
