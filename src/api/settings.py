@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
-from waitress import serve
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ce-ntr^1vf3b85@xt4n01m)!*j6nd0pa@o#z*zbo)8=(kwn2@4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -40,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_swagger',
     'core',
 ]
 
@@ -70,6 +69,10 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+  'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+}
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
@@ -123,5 +126,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-django_heroku.settings(locals())
-serve(WSGI_APPLICATION)
+#django_heroku.settings(locals())
+#serve(WSGI_APPLICATION)

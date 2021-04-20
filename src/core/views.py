@@ -22,7 +22,7 @@ def get(request):
 
 #Searches requested player's id from playerIDs.txt
 def get_id():
-    file = open("src/playerIDs.txt", "r", encoding='utf-8')
+    file = open("../src/playerIDs.txt", "r", encoding='utf-8')
     for line in file:
         if data['player'] in line:
             return line.split(", ")[1]
@@ -40,6 +40,15 @@ def get_season():
 def statscraper():
     #Get requested player's ID
     target_id = get_id()
+
+    #Check if a valid player was found 
+    if target_id == "-1":
+        error = {   "status" : 400,
+            "developerMessage" : "No matching player ID was found",
+            "userMessage" : "The player's name was not recognized. Make sure the player's name is spelled correctly.", 
+            "errorCode" : "01",
+        }
+        return error
 
     #Read request data
     target_date = get_date()
@@ -70,7 +79,7 @@ def statscraper():
         error = {   "status" : 400,
             "developerMessage" : "Scraped data did not contain a match",
             "userMessage" : "The requested player likely did not play on the given date", 
-            "errorCode" : "01",
+            "errorCode" : "02",
         }
         return error
         
