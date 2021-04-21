@@ -7,7 +7,7 @@ GET requests should adhere to the following schema:
 ![Request template](https://i.imgur.com/Z1zPAJr.png)
 
 
-Note that if the season of interest is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
+Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
 
 ##Example
 
