@@ -2,7 +2,7 @@
 
 ### To use API, make a GET request to [http://fastbreak-api.herokuapp.com](http://fastbreak-api.herokuapp.com) (API calls might take several seconds at first if link is [asleep](https://devcenter.heroku.com/articles/dynos#dyno-sleeping))
 
-##### Note that only data from 1984-2021 is supported at this moment.
+##### Note that only data from 1984-2021 is supported at the moment.
 
 GET requests should adhere to the following schema:
 
