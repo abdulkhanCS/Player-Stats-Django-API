@@ -2,14 +2,14 @@
 
 ### To use API, make a GET request to [http://fastbreak-api.herokuapp.com](http://fastbreak-api.herokuapp.com) (API calls might take several seconds at first if link is [asleep](https://devcenter.heroku.com/articles/dynos#dyno-sleeping))
 
-Note that only data from 1984-2021 is supported at this moment.
+##### Note that only data from 1984-2021 is supported at this moment.
 
 GET requests should adhere to the following schema:
 
 ![Request template](https://i.imgur.com/Z1zPAJr.png)
 
 
-Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
+##### Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
 
 ## Example
 
