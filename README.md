@@ -9,7 +9,7 @@ GET requests should adhere to the following schema:
 
 Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
 
-##Example
+## Example
 
 Given the following GET request:
 
@@ -19,7 +19,7 @@ The following JSON payload would be retrieved:
 
 ![Working example JSON payload](https://i.imgur.com/uHLnTxU.png)
 
-##Error Cases
+## Error Cases
 
 If the name of the requested player is spelled incorrectly or otherwise unrecognized:
 
