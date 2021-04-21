@@ -25,7 +25,7 @@ If the name of the requested player is spelled incorrectly or otherwise unrecogn
 
 ![Error example 1](https://i.imgur.com/6SlXQg1.png)
 
-The JSON payload will be retrieved with a status 400 and errorCode 1:
+The JSON payload will be retrieved with a status 400 and errorCode 01:
 
 ![Error example 1](https://i.imgur.com/AzSoOMz.png)
 
@@ -33,7 +33,7 @@ If the requested date is a day where the requested player did not play in a game
 
 ![Error example 1](https://i.imgur.com/1AKAqDq.png)
 
-The JSON payload will be retrieved with a status 400 and errorCode 2:
+The JSON payload will be retrieved with a status 400 and errorCode 02:
 
 ![Error example 1](https://i.imgur.com/IwFAww5.png)
 
