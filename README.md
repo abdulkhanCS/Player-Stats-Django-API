@@ -4,15 +4,6 @@
 
 ##### Note that only data from 1984-2021 is supported at the moment.
 
-GET requests should adhere to the following schema:
-
-```
-"player" : "First Last", 
-"date" : "MM/DD",
-"season" : "YYYY"
-```
-
-
 ##### Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
 
 ## Making a Request
@@ -46,6 +37,16 @@ getPlayerData()
     }
   }) 
 ```
+
+Note that the ```data``` of the GET request should adhere to the following schema:
+
+```
+"player" : "First Last", 
+"date" : "MM/DD",
+"season" : "YYYY"
+```
+
+
 
 The output of the ```console.log()``` statement in line 19 results in the following output:
 ```
