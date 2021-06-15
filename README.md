@@ -48,7 +48,7 @@ Note that the ```data``` of the GET request should adhere to the following schem
 
 
 
-The output of the ```console.log()``` statement in line 19 results in the following output:
+The output of the ```console.log(data)``` statement results in the following output:
 ```
 {
   status: 200,
