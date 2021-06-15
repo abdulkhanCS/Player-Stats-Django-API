@@ -11,15 +11,15 @@ GET requests should adhere to the following schema:
 
 ##### Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
 
-## Example
+## Making a Request
 
-Given the following GET request:
+The following code makes a request to FastbreakAPI and retrieves player data using Axios. The code can be found under the demo folder in demo.js.
 
-![Working example](https://i.imgur.com/ogN1fhl.png)
+![Working example](https://i.imgur.com/7jYnIUF.png)
 
 The following JSON payload would be retrieved: 
 
-![Working example JSON payload](https://i.imgur.com/uHLnTxU.png)
+![Working example JSON payload](https://i.imgur.com/pwf5bBK.png)
 
 ## Error Cases
 
