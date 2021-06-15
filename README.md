@@ -22,8 +22,31 @@ The following code makes a request to FastbreakAPI and retrieves player data usi
 ![Working example](https://i.imgur.com/7jYnIUF.png)
 
 The output of the ```console.log()``` statement in line 19 results in the following output:
+```
+{
+  status: 200,
+  statline: {
+    points: '81',
+    rebounds: '6',
+    assists: '2',
+    steals: '3',
+    blocks: '1',
+    turnovers: '3',
+    minutes: '42',
+    field_goals: '28-46',
+    three_pointers: '7-13',
+    free_throws: '18-20',
+    fg_percentage: '60.9',
+    three_point_percentage: '53.8',
+    ft_percentage: '90.0',
+    personal_fouls: '1'
+  },
+  date: 'Sun 1/22',
+  team_played: 'vsTOR',
+  score: 'W122-104'
+}
+```
 
-![Working example JSON payload](https://i.imgur.com/pwf5bBK.png)
 Where any field of the json payload can be accessed through ```data['<field']```.
 
 ## Error Cases
