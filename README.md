@@ -13,13 +13,14 @@ GET requests should adhere to the following schema:
 
 ## Making a Request
 
-The following code makes a request to FastbreakAPI and retrieves player data using Axios. The code can be found under the demo folder in demo.js.
+The following code makes a request to FastbreakAPI and retrieves player data using Axios. To use Axios, install the client through typing the command ```npm install axios``` in your current working directory. The code can be found under the demo folder in demo.js. 
 
 ![Working example](https://i.imgur.com/7jYnIUF.png)
 
-The following JSON payload would be retrieved: 
+The output of the ```console.log()``` statement in line 19 results in the following output:
 
 ![Working example JSON payload](https://i.imgur.com/pwf5bBK.png)
+Where any field of the json payload can be accessed through ```data['<field']```.
 
 ## Error Cases
 
