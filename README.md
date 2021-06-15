@@ -19,7 +19,33 @@ GET requests should adhere to the following schema:
 
 The following code makes a request to FastbreakAPI and retrieves player data using Axios. To use Axios, install the client through typing the command ```npm install axios``` in your current working directory. The code below can be found under the demo folder in demo.js. 
 
-![Working example](https://i.imgur.com/7jYnIUF.png)
+```
+const axios = require('axios')
+
+async function getPlayerData(){
+  try { 
+    const response = await axios.get('http://fastbreak-api.herokuapp.com', 
+      { data: { 
+        player: 'Kobe Bryant',
+        date: '01/22', 
+        season: '2006' 
+      } })
+      return response
+  } catch (error) { console.log(error) }
+}
+
+getPlayerData()
+  .then(response => response.data)
+  .then((data) => {
+    if(data["status"] == 200){
+      console.log(data)
+      //DO SOME WORK WITH DATA
+    }
+    else{
+      console.log("FastbreakAPI returned an error of ", response[status])
+    }
+  }) 
+```
 
 The output of the ```console.log()``` statement in line 19 results in the following output:
 ```
