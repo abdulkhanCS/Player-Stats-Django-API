@@ -13,7 +13,7 @@ GET requests should adhere to the following schema:
 
 ## Making a Request
 
-The following code makes a request to FastbreakAPI and retrieves player data using Axios. To use Axios, install the client through typing the command ```npm install axios``` in your current working directory. The code can be found under the demo folder in demo.js. 
+The following code makes a request to FastbreakAPI and retrieves player data using Axios. To use Axios, install the client through typing the command ```npm install axios``` in your current working directory. The code below can be found under the demo folder in demo.js. 
 
 ![Working example](https://i.imgur.com/7jYnIUF.png)
 
