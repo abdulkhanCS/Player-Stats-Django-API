@@ -38,7 +38,7 @@ getPlayerData()
   }) 
 ```
 
-Note that the ```data``` of the GET request should adhere to the following schema:
+Note that the ```data``` field of the GET request should adhere to the following schema:
 
 ```
 "player" : "First Last", 
