@@ -1,0 +1,3 @@
+source env/bin/activate //Activate virtual environment
+cd src 
+python manage.py runserver

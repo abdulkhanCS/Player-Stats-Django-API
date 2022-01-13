@@ -63,7 +63,7 @@ def statscraper():
     #Get url of target player
     target_url = "https://www.espn.com/nba/player/gamelog/_/id/" + str(target_id)
     target_url = target_url.strip('\n')
-    if(target_season != '2021'):
+    if(target_season != '2022'):
         target_url = target_url + "/type/nba/year/" + target_season
 
     #Start scraping stats
@@ -75,7 +75,7 @@ def statscraper():
         statline = game.find_all(class_="Table__TD")
         date = statline[0].text
         if '/' in date:
-            if target_date in date:
+            if target_date == date[4:]:
                 target_statline = statline
 
     #If no result found return an error
