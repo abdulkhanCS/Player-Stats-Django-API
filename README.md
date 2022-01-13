@@ -76,7 +76,7 @@ The output of the ```console.log(data)``` statement above results in the followi
 }
 ```
 
-Where any field of the json payload can be accessed through ```data['<field']```.
+Where any field of the json payload can be accessed through ```data['<field>']```.
 
 ## Error Cases
 
