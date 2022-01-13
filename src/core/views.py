@@ -19,7 +19,28 @@ data = None
 def get_data(request):
     global data 
     data = request.data
-    return Response(statscraper())
+    return Response(get_statline())
+
+def validate_request():
+    if 'player' not in data.keys():
+        return {   "status" : 400,
+            "developerMessage" : "The request did not contain a 'player' field",
+            "userMessage" : "Specify the player whose data you are requesting", 
+            "errorCode" : "03",
+        }
+    if 'date' not in data.keys():
+        return {   "status" : 400,
+            "developerMessage" : "The request did not contain a 'date' field",
+            "userMessage" : "Specify the date in your request", 
+            "errorCode" : "04",
+        }
+    if 'season' not in data.keys():
+        return {   "status" : 400,
+            "developerMessage" : "The request did not contain a 'season' field",
+            "userMessage" : "Specify the season in your request", 
+            "errorCode" : "05",
+        }
+    return {'status': 200}
 
 #Searches requested player's id from playerIDs.txt
 def get_id():
@@ -42,7 +63,12 @@ def get_season():
     return data['season']
 
 #Scrapes data
-def statscraper():
+def get_statline():
+
+    print(validate_request())
+    if validate_request()['status'] == 400:
+        return validate_request()
+
     #Get requested player's ID
     target_id = get_id()
 
