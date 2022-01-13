@@ -2,9 +2,11 @@
 
 ### To use API, make a GET request to [http://fastbreak-api.herokuapp.com](http://fastbreak-api.herokuapp.com) (API calls might take several seconds at first if link is [asleep](https://devcenter.heroku.com/articles/dynos#dyno-sleeping))
 
-##### Note that only data from 1984-2021 is supported at the moment.
+##### Note that only data from 1984-2022 is supported at the moment.
 
-##### Note that if the requested season is 2020-2021, the latter year (2021 in this case) should be entered. Alternatively 2020-2021 can also be entered for the season field. 
+##### Note that if the requested season is 2021-2022, the latter year (2022 in this case) should be entered. Alternatively 2021-2022 can also be entered for the season field. 
+
+##### Note that the player's name should be entered as it officially appears on ESPN's website.
 
 ## Making a Request
 
@@ -48,7 +50,7 @@ Note that the ```data``` field of the GET request should adhere to the following
 
 
 
-The output of the ```console.log(data)``` statement results in the following output:
+The output of the ```console.log(data)``` statement above results in the following output:
 ```
 {
   status: 200,
